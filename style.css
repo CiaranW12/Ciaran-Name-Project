@@ -100,10 +100,8 @@ header {
 footer {
     display: flex;
     justify-content: center;
-    flex direction: column;
+    flex-direction: column;
     text-align: center;
-    margin: 1rem;
-    padding: 2rem;
 }
 
 .github{
