@@ -24,15 +24,17 @@ body{
     display: flex;
     text-align: center;
     justify-content: space-around;
-    background-color: transparent;
     color:#00ADB5;
     font-family: 'Courier';
     width: 100px;
+    height: 40px;
+    padding: 10px 20px;
     margin: auto;
     transition:0.3s;
+    
 }
 .button:hover{
-    transform:scale(1.3)
+    transform:scale(1.3);
 }
 .right-nav {
     padding: 2rem;
@@ -173,7 +175,14 @@ fieldset {
     height :110px;
     margin-top: 1rem;
 }
-
+.githubfoot img{
+    border-radius: 50%;
+}
+.githubfoot img:hover{
+    transition: 0.3s;
+    transform: scale(1.3);
+    animation:flash 1s infinite;
+}
 @keyframes flash {
     0% {
         background-color: initial;
