@@ -21,8 +21,18 @@ body{
     transform:scale(1.2);
 }
 .button {
-    display: block;
+    display: flex;
     text-align: center;
+    justify-content: space-around;
+    background-color: transparent;
+    color:#00ADB5;
+    font-family: 'Courier';
+    width: 100px;
+    margin: auto;
+    transition:0.3s;
+}
+.button:hover{
+    transform:scale(1.3)
 }
 .right-nav {
     padding: 2rem;
@@ -56,17 +66,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #393E46;
+    background-color: #00ADB5;
 }
 
 #duck img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    transition: 0.3s;
+}
+#duck img:hover{
+    transform: scale(1.2)
 }
 .text p, .text h2 {
     text-align: center;
-    padding: 0px 20px;
+    padding: 0px 20px ;
 }
 
 .duck {
@@ -94,11 +108,14 @@ header {
     height: 150px;
     transition: 0.3s;
     background-color: #00ADB5;
+    font-family: Courier;
+    color: black;
 
 }
 .grid-item:hover{
     transform: scale(1.1);
     animation: flash 1s linear;
+    animation-iteration-count: infinite;
 
 }
 
@@ -114,16 +131,15 @@ footer {
     border-radius: 5%;
     display: flex;
     flex-direction: column-reverse;
-    width: 50%;
-    margin: 30px auto;
-    padding: 50px;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
     background-color: #EEEEEE;
   
 }
 fieldset {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     border-radius: 3%;
     background-color: #00ADB5;
 }
@@ -141,6 +157,16 @@ fieldset {
     height: 30px;
     margin: 10px auto;
     color:  black;
+    background-color: #00ADB5;
+    transition: 0.3s;
+}
+#fieldbutton:hover{
+    transform: scale(1.3);
+    animation: flash 1s linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+
+
 }
 .github{
     width: 110px;
@@ -153,7 +179,7 @@ fieldset {
         background-color: initial;
     }
     50% {
-        background-color: rgba(107, 107, 106, 0.5);
+        background-color: rgba(36, 155, 149, 0.5);
     }
     100% {
         background-color: initial;
