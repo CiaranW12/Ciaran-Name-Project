@@ -57,12 +57,25 @@
     <footer id="contact">
         <h2>Contact us</h2>
         <form>
-            <input type="text" />
-            <textarea cols="30" rows="10"></textarea>
-            <button type="submit">Submit</button>
-            </form>
-            <div>Proudly created by <em>Ciaran</em></div>
-        </form>
+            <div class="form-container">
+                <form action="">
+                    <fieldset>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="name">                           
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="email">                        
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                       
+                        <button type="submit" id="fieldbutton">Submit</button>
+        
+                    </fieldset>
+                
+                   
+                
+                </form>
+        
+            </div>
         <a href="https://github.com/CiaranW12">
             <img class="github" src="Resources\github.png" alt="github-icon">
         </a>
