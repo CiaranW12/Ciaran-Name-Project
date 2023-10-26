@@ -36,9 +36,12 @@
                 <button> Button </button>
                 </div>
             </div>
-            <div class="duck">
-                <a href="https://previews.123rf.com/images/piep600/piep6001202/piep600120200112/12541539-living-cute-little-ducks.jpg">
-                    <img src="Resources\580b57fbd9996e24bc43bbe1.png" alt="rubberduck"/>
+            <div class="duck" onclick="toggleVideo()">
+                <img src="Resources\580b57fbd9996e24bc43bbe1.png" alt="rubberduck"/>
+              </div>
+              
+              <div id="duck-video" style="display:none;">
+                <iframe width="560" height="315" src="https://youtu.be/CwGfMgFWcT4" frameborder="0" allowfullscreen></iframe></div>
                 </a>
             </div>
         </section>
@@ -82,5 +85,15 @@
         </a>
     </div>
     </footer>
+    <script>
+        function toggleVideo() {
+          var video = document.getElementById("duck-video");
+          if (video.style.display === "none") {
+            video.style.display = "block"; // Show the video
+          } else {
+            video.style.display = "none"; // Hide the video
+          }
+        }
+        </script>
 </body>
 </html>
